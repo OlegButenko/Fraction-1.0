@@ -19,4 +19,9 @@ public class Fraction {
     public void printFraction() {
         System.out.println(getNumerator() + "/" + getDenominator());
     }
+
+    public Fraction multiplication(Fraction other) {
+        Fraction a = new Fraction(this.numerator * other.getNumerator(), this.denominator * other.getDenominator());
+        return a;
+    }
 }
